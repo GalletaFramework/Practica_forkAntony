@@ -2,32 +2,25 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Help Desk</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>HelpDesk</title>
   </head>
   <body>
-
-    <h1>Sistema Help Desk</h1>
+    <h1>Sistema de Tickets</h1>
+    <form id="formulario">
+      <button type="submit">Registrar Ticket</button>
+    </form>
 
     <table border="1">
+      <thead>
         <tr>
-            <th>ID</th>
-            <th>Usuario</th>
-            <th>Estado</th>
+          <th>ID</th>
+          <th>Usuario</th>
+          <th>Estado</th>
         </tr>
-
-        <tr>
-            <td>1</td>
-            <td>Carlos</td>
-            <td>Pendiente</td>
-        </tr>
+      </thead>
+      <tbody id="cuerpo-tabla"></tbody>
     </table>
 
-</body>
-    <form>
-      <input type="text" placeholder="Título del problema" />
-      <textarea placeholder="Descripción"></textarea>
-      <button>Registrar Ticket</button>
-    </form>
+    <script src="app.js"></script>
   </body>
 </html>
